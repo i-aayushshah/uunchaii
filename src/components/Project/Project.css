@@ -1,0 +1,124 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px 170px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .project-container img {
+    box-sizing: border-box;
+    width: 400px;
+    height: 280px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .project-container img:hover {
+    transform: scale(1.10);
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  .project-showmore {
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+
+  .project-showmore:hover {
+    gap: 30px;
+    transition: 0.6s;
+  }
+
+  .project-dialog {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #161513;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .project-details img {
+    width: calc(100% - 0px);
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+
+  .project-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .project-details p {
+    margin-bottom: 5px;
+  }
+
+  .close-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px; /* Adjust the size of the container */
+    height: 40px; /* Adjust the size of the container */
+    background-color: #fff;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #333;
+  }
+
+  .close-button:hover {
+    color: #999;
+  }
+  .project-dialog::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Thin scrollbar track */
+  .project-dialog::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Thin scrollbar thumb */
+  .project-dialog::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+  }
+
+  /* Thin scrollbar thumb on hover */
+  .project-dialog::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }

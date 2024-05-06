@@ -1,0 +1,73 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Set text color to white */
+    position: relative; /* Position relative for absolute positioning */
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+    color: #fff; /* Set text color to white */
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative; /* Position relative for absolute positioning */
+  }
+
+  .about-heading::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: lineAnimation 1s ease-in-out infinite alternate, colorAnimation 5s linear infinite alternate, boldAnimation 2s linear infinite alternate;
+  }
+
+  .about-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .about-paragraph br {
+    margin-bottom: 10px;
+  }
+
+  @keyframes lineAnimation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100px;
+    }
+  }
+
+  @keyframes colorAnimation {
+    0% {
+      background-color: #fff;
+    }
+    50% {
+      background-color: #ff0000; /* Change color to red */
+    }
+    100% {
+      background-color: #00ff00; /* Change color to green */
+    }
+  }
+
+  @keyframes boldAnimation {
+    0% {
+      font-weight: normal;
+    }
+    50% {
+      font-weight: bold; /* Make text bold */
+    }
+    100% {
+      font-weight: normal;
+    }
+  }

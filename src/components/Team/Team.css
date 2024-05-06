@@ -1,0 +1,182 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 70px 170px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.team-member {
+    position: relative;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: border-color 0.3s;
+}
+
+.team-member:hover {
+    border-color: #aaa;
+}
+
+.team-member img {
+    box-sizing: border-box;
+    width: 250px;
+    height: 200px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.team-member img:hover {
+    transform: scale(1.10);
+}
+
+.team-member h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.team-member p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20%;
+    display: flex;
+    flex-direction: column;
+    transition:all 400ms ease;
+    border-radius: 1rem  0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(22, 21, 19, 0.8);;
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    right: 0;
+    pointer-events:auto;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 1rem;
+}
+
+
+.dialog {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #161513;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .dialog-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+  }
+
+  .dialog-content img {
+    width: calc(100% - 40px);
+    max-width: 100%;
+    height: 80%; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+
+  .dialog-content h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .dialog-content h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .dialog-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .dialog-content .social-link {
+    margin-top: 10px;
+  }
+
+  .dialog-content .social-link a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .dialog-content .social-link a:hover {
+    color: #007bff;
+  }
+
+  .close-dialog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .close-dialog:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .close-dialog i {
+    color: #333;
+  }
+  .dialog::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Thin scrollbar track */
+  .dialog::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Thin scrollbar thumb */
+  .dialog::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+  }
+
+  /* Thin scrollbar thumb on hover */
+  .dialog::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }

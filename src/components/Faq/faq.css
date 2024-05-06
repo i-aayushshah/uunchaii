@@ -1,0 +1,52 @@
+/* faq.css */
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 70px 280px;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  position: relative;
+  border: 1px solid #080808;
+  background-color: #242424;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin: 10px 280px;
+  padding: 20px 35px 20px 10px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: calc(100% - 22px);
+  overflow: hidden;
+}
+
+.faq-item.expanded {
+  height: auto;
+}
+
+.faq-item h3 {
+  margin: 0;
+}
+
+.faq-item p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Styling for chevron icons */
+.faq-item .fa {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
