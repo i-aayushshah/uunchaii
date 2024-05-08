@@ -28,7 +28,7 @@ const Team = () => {
   };
 
   return (
-    <div className='team'>
+    <div className='team' id='team'>
       <div className="team-title">
         <h1 className="about-heading">Our Team</h1>
       </div>

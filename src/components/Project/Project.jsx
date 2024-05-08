@@ -29,7 +29,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div className='project'>
+    <div id='project' className='project'>
       <div className="project-title">
         <h1 className="about-heading">Highlighted Project</h1>
       </div>

@@ -13,7 +13,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="FAQ">
+    <div id='faq' className="FAQ">
       <h1 className="about-heading">FAQ</h1>
 
       {/* Eligibility Section */}

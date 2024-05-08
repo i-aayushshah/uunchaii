@@ -1,35 +1,39 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    padding: 20px 170px;
-    z-index: 1000;
-    transition: background-color 0.3s ease; /* Add transition for smooth color change */
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 20px 170px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
 
-  .scrolled {
-    background-color: rgba(22, 21, 19, 0.8); /* Transparent black background */
-  }
+.scrolled {
+  background-color: rgba(22, 21, 19, 0.8);
+}
 
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-size: 20px;
-  }
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+}
 
-  .nav-connect {
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
-  }
+.nav-menu li {
+  cursor: pointer;
+}
 
-  .nav-connect:hover {
-    transform: scale(1.05);
-  }
+.nav-connect {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}

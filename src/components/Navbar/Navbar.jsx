@@ -23,17 +23,39 @@ const Navbar = () => {
     };
   }, []);
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      window.scrollTo({
+        top: section.offsetTop - navbarHeight,
+        behavior: 'smooth'
+      });
+    }
+  };
+  const scrollToConnect = () => {
+    const connectSection = document.getElementById('contact');
+    if (connectSection) {
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      window.scrollTo({
+        top: connectSection.offsetTop - navbarHeight,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <img src={logo} alt="logo" height="120px"/>
       <ul className="nav-menu">
-        <li>Home</li>
-        <li>About us</li>
-        <li>Projects</li>
-        <li>FAQ</li>
-        <li>Team</li>
-      </ul>
-      <div className="nav-connect">Connect with us</div>
+        <li onClick={() => scrollToSection('home')}>Home</li>
+        <li onClick={() => scrollToSection('about')}>About us</li>
+        <li onClick={() => scrollToSection('project')}>Projects</li>
+        <li onClick={() => scrollToSection('team')}>Team</li>
+        <li onClick={() => scrollToSection('faq')}>FAQ</li>
+      </ul >
+
+      <div className="nav-connect" onClick={scrollToConnect}>Connect with us</div>
     </div>
   );
 }
