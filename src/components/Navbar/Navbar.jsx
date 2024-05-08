@@ -33,6 +33,14 @@ const Navbar = () => {
       });
     }
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const scrollToConnect = () => {
     const connectSection = document.getElementById('contact');
     if (connectSection) {
@@ -46,14 +54,14 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-      <img src={logo} alt="logo" height="120px"/>
+      <img src={logo} alt="logo" height="120px" onClick={scrollToTop} />
       <ul className="nav-menu">
         <li onClick={() => scrollToSection('home')}>Home</li>
         <li onClick={() => scrollToSection('about')}>About us</li>
         <li onClick={() => scrollToSection('project')}>Projects</li>
         <li onClick={() => scrollToSection('team')}>Team</li>
         <li onClick={() => scrollToSection('faq')}>FAQ</li>
-      </ul >
+      </ul>
 
       <div className="nav-connect" onClick={scrollToConnect}>Connect with us</div>
     </div>

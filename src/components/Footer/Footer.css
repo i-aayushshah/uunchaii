@@ -38,6 +38,13 @@
     color: #fff;
     margin: 10px;
   }
+  .footer .links{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+  }
 
   .footer .follow {
     margin-top: 20px;
@@ -51,6 +58,9 @@
 
   .footer .follow i:hover,
   .footer a:hover {
+    color: #088178;
+  }
+  .links:hover{
     color: #088178;
   }
   .copyright {
