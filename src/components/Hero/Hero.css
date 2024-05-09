@@ -38,3 +38,25 @@
   font-size: 1.2rem;
   margin-top: 10px;
 }
+@media (max-width: 799px) {
+  .hero {
+    height: 50vh;
+    width: 200%;
+  }
+
+  .hero::before {
+    height: 100%;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem; 
+  }
+}
