@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
-
+import menu_open from '../../assets/menu_open.svg'
+import menu_close from '../../assets/menu_close.svg'
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -17,7 +18,7 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup function to remove the event listener when the component unmounts
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -51,11 +52,22 @@ const Navbar = () => {
       });
     }
   };
+  const menuRef = useRef();
+  const openMenu = () => {
+    menuRef.current.style.right='0'
+
+  }
+  const closeMenu = () => {
+    menuRef.current.style.right='-350px'
+
+  }
 
   return (
     <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-      <img src={logo} alt="logo" height="120px" onClick={scrollToTop} />
-      <ul className="nav-menu">
+      <img src={logo} alt="logo" height="120px" onClick={scrollToTop} className="logo"/>
+      <img src={menu_open} onClick={openMenu} alt="" className='nav-mob-open'/>
+      <ul ref={menuRef} className="nav-menu">
+        <img src= {menu_close} onClick={closeMenu}alt="" className='nav-mob-close'/>
         <li onClick={() => scrollToSection('home')}>Home</li>
         <li onClick={() => scrollToSection('about')}>About us</li>
         <li onClick={() => scrollToSection('project')}>Projects</li>
