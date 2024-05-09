@@ -23,7 +23,7 @@ const Contact = () => {
           setTimeout(() => {
             setShowSuccessMessage(false);
             form.current.reset();
-          }, 3000); 
+          }, 3000);
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -60,7 +60,7 @@ const Contact = () => {
           <label htmlFor=''>Write your message here</label>
           <textarea name='message' rows='8' placeholder='Enter your message' required></textarea>
           <button className='contact-submit' type='submit' value='Send'>
-            Submit Now
+            Submit
           </button>
           {showSuccessMessage && (
             <div className='success-message'>

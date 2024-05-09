@@ -92,3 +92,66 @@
     text-align: center;
   }
 
+
+  @media (max-width: 799px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        margin: 50px 50%;
+        width: 100%;
+    }
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+    .contact-left p{
+        max-width: 550px;
+        color: #d8d8d8;
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .contact-left h1{
+        font-size: 50px;
+    }
+    .contact-right input{
+            width: 100%;
+        }
+    .contact-right textarea{
+        width: 95%;
+        }
+  }
+
+  @media (max-width: 1180px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    
+    }
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+    .contact-left p{
+        max-width: 550px;
+        color: #d8d8d8;
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .contact-left h1{
+        font-size: 50px;
+    }
+    .contact-right input{
+            width: 100%;
+        }
+    .contact-right textarea{
+        width: 95%;
+        }
+  }
