@@ -1,7 +1,7 @@
 .application {
     position: relative;
     text-align: center;
-    color: #fff; 
+    color: #fff;
     height: 55vh;
     border: 20px solid #000;
     box-sizing: border-box;
@@ -57,4 +57,10 @@
 
 .application button:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 799px) {
+    .application {
+        width: 210%;
+}
 }

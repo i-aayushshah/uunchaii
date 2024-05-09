@@ -122,3 +122,52 @@
   .project-dialog::-webkit-scrollbar-thumb:hover {
     background: #999;
   }
+
+  @media (max-width: 765px) {
+    .project{
+      max-width: 800px;
+      margin: 70px 50%;
+      width: 100%;
+
+    }
+    .project-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+    .project-dialog {
+      max-height: 90vh;
+
+    }
+  }
+  @media screen and (max-width: 1180px){
+    .project-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .project-container img {
+      box-sizing: border-box;
+      width: 300px;
+      height: 280px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+  @media screen and (width: 768px){
+    .project{
+      max-width: 800px;
+      margin: 70px 50%;
+      width: 100%;
+
+    }
+    .project-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+    .project-dialog {
+      max-height: 90vh;
+
+    }
+  }

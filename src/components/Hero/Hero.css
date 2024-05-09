@@ -41,7 +41,7 @@
 @media (max-width: 799px) {
   .hero {
     height: 50vh;
-    width: 200%;
+    width: 210%;
   }
 
   .hero::before {
@@ -57,6 +57,8 @@
   }
 
   .hero p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
+
+

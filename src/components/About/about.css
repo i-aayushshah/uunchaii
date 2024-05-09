@@ -5,7 +5,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #fff; /* Set text color to white */
-    position: relative; /* Position relative for absolute positioning */
+    /* Position relative for absolute positioning */
   }
 
   .about-heading {
@@ -69,5 +69,29 @@
     }
     100% {
       font-weight: normal;
+    }
+  }
+  @media (max-width: 799px) {
+    .about-container{
+      max-width: 800px;
+      margin: 0 20%;
+      width: 150%;
+
+    }
+  }
+  @media screen and (width: 768px){
+    .about-container{
+      max-width: 650px;
+      margin: 0 60%;
+      width: 100%;
+
+    }
+  }
+  @media screen and (width: 712px){
+    .about-container{
+      max-width: 650px;
+      margin: 0 50%;
+      width: 100%;
+
     }
   }

@@ -180,3 +180,52 @@
   .dialog::-webkit-scrollbar-thumb:hover {
     background: #999;
   }
+  @media (max-width: 799px) {
+    .team {
+      margin: 70px 50%;
+      width: 100%;
+  }
+
+  .team-container {
+      display: grid;
+      grid-template-columns: 1fr  1fr;
+      gap: 30px;
+  }
+  .dialog {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #161513;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+
+  }
+  @media screen and (max-width: 1180px){
+    .team-container {
+      display: grid;
+      grid-template-columns: 1fr  1fr;
+      gap: 30px;
+  }
+  .dialog {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #161513;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+
+  }
