@@ -65,7 +65,7 @@
     height: auto;
     border-radius: 10px;
     margin: 0;
-    padding: 0; 
+    padding: 0;
   }
 
   .project-details h2 {
@@ -82,10 +82,10 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 40px; /* Adjust the size of the container */
-    height: 40px; /* Adjust the size of the container */
+    width: 40px;
+    height: 40px;
     background-color: #fff;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,18 +107,18 @@
     height: 5px;
   }
 
-  /* Thin scrollbar track */
+
   .project-dialog::-webkit-scrollbar-track {
     background: transparent;
   }
 
-  /* Thin scrollbar thumb */
+
   .project-dialog::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 5px;
   }
 
-  /* Thin scrollbar thumb on hover */
+ 
   .project-dialog::-webkit-scrollbar-thumb:hover {
     background: #999;
   }
