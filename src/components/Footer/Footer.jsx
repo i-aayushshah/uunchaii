@@ -27,7 +27,7 @@ const Footer = () => {
   return (
     <div className='footers'>
       <footer className="footer">
-        <div className="col">
+        <div className="col first-row-item">
           <div className="logo" onClick={scrollToTop}>
             <img src={logo} alt="logo" />
           </div>
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col">
+        <div className="col second-row-item-1">
           <h4>Quick Links</h4>
           <p className='links' onClick={() => scrollToSection('about')}>About us</p>
           <p className='links' onClick={() => scrollToSection('project')}>Projects</p>
@@ -46,7 +46,7 @@ const Footer = () => {
           <p className='links' onClick={() => scrollToSection('team')}>Team</p>
         </div>
 
-        <div className="col">
+        <div className="col second-row-item-2">
           <h4>Contact Us</h4>
           <div className="contact-det">
             <img src={mail_icon} alt="" /><a href={`mailto:'uunchai@gmail.com'`}><p>uunchai@gmail.com</p></a>

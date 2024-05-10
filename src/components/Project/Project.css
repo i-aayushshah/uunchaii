@@ -62,10 +62,10 @@
   .project-details img {
     width: calc(100% - 0px);
     max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
     border-radius: 10px;
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0;
+    padding: 0; 
   }
 
   .project-details h2 {
